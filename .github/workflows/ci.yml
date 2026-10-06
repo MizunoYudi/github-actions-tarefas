@@ -18,4 +18,10 @@ jobs:
           distribution: "temurin"
 
       - name: Executar testes
-        run: mvn test  
+        run: mvn test
+
+      - name: Limpando configuracoes anteriores
+        run: mvn clean
+
+      - name: Rodando novamente os testes
+        run: mvn test
