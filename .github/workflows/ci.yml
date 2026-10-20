@@ -37,5 +37,5 @@ jobs:
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
           mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
-            -Dsonar.projectKey=MizunoYudi_github-actions-tarefas \
+            -Dsonar.projectKey=github-actions-tarefas \
             -Dsonar.organization=mizunoyudi
